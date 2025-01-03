@@ -1,5 +1,19 @@
-atomi costamti:
-sequenza di lettere e numeri che inizia con la minuscola e non ha spazi in mezoo
+1)atomi costamti:
+sequenza di lettere e numeri che inizia con la minuscola e non ha spazi in mezzo tranne se uso 'Ma dna ma'
 
-atomi numerici:
-sequenze di numeri
+2)atomi numerici:
+sequenze di numeri che non iniziano con lo 0 a meno che non sia un numero con la virgola
+
+3)atomi variabili: con la lettera maiuscola Variabile, _variabile, _ ecc..
+
+predicati: lettera predicativa(argomenti) no parametri!!!
+es. persona(mario,rossi,34)
+
+costruire fatti: predicato che termina con il punto persona(mario,rossi,34). esiste mario rossi di 34 anni
+
+fratelloDi(X,Y) :- //il :- è il se
+ X ha genitore Z, haGenitore(X,Z), //la , è un and
+ Y ha genitore Z.  haGenitore(Y,Z). //il . è la fine della regola
+
+
+UNIFICAZIONE: le variabili costanti vengono unificate
